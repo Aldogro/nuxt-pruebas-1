@@ -18,7 +18,7 @@
     <c-button left-icon="info" variant-color="blue" m="2" @click="showToast">Show Toast</c-button>
 
     <c-button size="sm" color="primary" @click="$toggleColorMode">Toggle Color Mode</c-button>
-    <nuxt-link to="/otro-lado">otro lado</nuxt-link>
+    <nuxt-link :to="localePath('another-way')">otro lado</nuxt-link>
     <c-switch @click="consol()" :value="showModal" color="vue" m="2"/>
 
     <lottie :width="1024" :height="1024" :options="lottieOptions" v-on:animCreated="handleAnimation" />

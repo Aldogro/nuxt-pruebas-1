@@ -12,7 +12,8 @@ export default {
   nuxtI18n: {
     paths: {
       en: '/another-way',
-      es: '/otro-lado'
+      es: '/otro-lado',
+      fr: '/utu-ladu'
     }
   }
 }
