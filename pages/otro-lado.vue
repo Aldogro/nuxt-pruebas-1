@@ -1,6 +1,8 @@
 <template>
   <div>
     <p>estás en otro lado</p>
+    <p>Welcome</p>
+    <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
     <nuxt-link to="/">home</nuxt-link>
   </div>
 </template>

@@ -71,18 +71,21 @@ export default {
   },
   i18n: {
     locales: ['en', 'fr', 'es'],
-    defaultLocale: 'es',
+    defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'es',
+      fallbackLocale: 'en',
       messages: {
         en: {
-          welcome: 'Welcome'
+          welcome: 'Welcome',
+          home: 'Home'
         },
         fr: {
-          welcome: 'Bienvenue'
+          welcome: 'Bienvenue',
+          home: 'Hogar en francés'
         },
         es: {
-          welcome: 'Bienvenido'
+          welcome: 'Bienvenido',
+          home: 'Inicio'
         }
       }
     }
