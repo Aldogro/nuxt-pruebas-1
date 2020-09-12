@@ -30,7 +30,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~assets/styles/main.css'
+    '~assets/styles/main.css',
+    '~node_modules/vuetify/dist/vuetify.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,7 +39,7 @@ export default {
   */
   plugins: [
     '~/plugins/axios',
-    '~/plugins/chakra-ui'
+    { src: '~/plugins/apex-charts.js', ssr: false }
   ],
   /*
   ** Auto import components
@@ -50,25 +51,22 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/toast',
-    '@nuxtjs/emotion',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    '@nuxtjs/vuetify'
   ],
   axios: {
     baseURL: 'https://jsonplaceholder.typicode.com'
   },
   toast:{},
-  chakra: {
-    extendTheme: defaultTheme
-  },
   i18n: {
     locales: ['en', 'fr', 'es'],
     defaultLocale: 'en',

@@ -9,15 +9,20 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@chakra-ui/nuxt": "0.0.10",
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/emotion": "0.0.1",
     "@nuxtjs/toast": "^3.3.1",
-    "bootstrap": "^4.5.0",
+    "apexcharts": "^3.20.2",
+    "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.15.0",
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.15.1",
-    "vue-lottie": "^0.2.1"
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "vue-apexcharts": "^1.6.0",
+    "vue-lottie": "^0.2.1",
+    "vuetify": "^2.3.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
 }
